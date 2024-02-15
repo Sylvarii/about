@@ -1,0 +1,179 @@
+.discord-box, .osrs-box, .osu-box, .twitter-box, .steam-box, .github-box, .youtube-box {
+  display: flex;
+
+  border: none;
+  border-radius: 20px;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.osrs-box, .steam-box, .github-box, .youtube-box {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+img {
+  position: relative;
+
+  width: 50%;
+
+  transition: transform 0.5s ease, width 0.5s ease;
+}
+
+.github-box img {
+  position: relative;
+
+  width: 60%;
+
+  transition: transform 0.5s ease, width 0.5s ease;
+}
+
+.discord-box img {
+  position: relative;
+
+  width: 70%;
+  padding-top: 4px;
+
+  transition: transform 0.5s ease;
+}
+
+.discord-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically and horizontally */
+  background-color: #5865f2;
+  grid-column: span 2;
+  grid-row: span 1;
+} 
+
+.discord-box:hover img {
+  transform: translateY(-10px);
+}
+
+.osrs-box {
+  background-color: #643f08;
+}
+
+.osrs-box:hover img {
+  transform: translateY(-10px);
+  width: 45%;
+}
+
+.osu-box {
+  background-color: #f668a7;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.osu-box img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.osu-box:active img {
+  transform: scale(0.9);
+}
+
+.twitter-box {
+  background-color: #28aae1;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.twitter-box:hover img {
+  transform: translateY(-10px);
+}
+
+.steam-box {
+  background-color:  #1b2838;
+}
+
+.steam-box:hover img {
+  transform: translateY(-10px);
+  width: 45%;
+}
+
+.github-box {
+  background-color:  white;
+}
+
+.github-box:hover img {
+  transform: translateY(-10px);
+  width: 50%;
+}
+
+.youtube-box {
+  background-color:  red;
+
+  padding-top: 3px;
+}
+
+.youtube-box:hover img {
+  transform: translateX(-58px);
+  width: 40%;
+}
+
+.name-box, .date-box {
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Protest Revolution', sans-serif;
+  color: white;
+  font-size: 62px;
+
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.sylvari-name {
+  font-family: "Rock Salt", cursive;
+  font-size: 20px;
+
+  margin-top: -5px;
+  padding-left: 35px;
+
+  cursor: default;
+}
+
+.top-right {
+  font-family: "Rock Salt", cursive;
+  font-size: 40px;
+  align-self: flex-end;
+  padding-right: 10px;
+
+  cursor: default;
+}
+
+.date-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  font-family: 'Protest Revolution', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.datetime-box {
+  align-self: flex-end;
+  font-size: 30px;
+  
+  padding-top: 35px;
+  padding-right: 35px;
+
+  cursor: default;
+}
+
+.timetime-box {
+  font-family: 'Protest Revolution', sans-serif;
+
+  align-self: flex-start;
+  font-size: 62px;
+  padding-left: 10px;
+
+  cursor: default;
+}

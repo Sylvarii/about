@@ -1,0 +1,34 @@
+.dc-nick, .osrs-nick, .twitter-nick, .steam-nick, .github-nick, .youtube-nick {
+  position: absolute;
+
+  font-family: "Inter", sans-serif;
+  color: white;
+
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  margin-top: 130px;
+}
+
+.discord-box:hover .dc-nick, .osrs-box:hover .osrs-nick, .twitter-box:hover .twitter-nick, .steam-box:hover .steam-nick, .github-box:hover .github-nick {
+  transform: translateY(-7px);
+  opacity: 1;
+}
+
+.dc-nick {
+  margin-top: 70px;
+  margin-left: -17px;
+}
+
+.github-nick {
+  color: black;
+}
+
+.youtube-nick {
+  margin-top: 18px;
+  margin-left: 82px;
+}
+
+.youtube-box:hover .youtube-nick {
+  transform: translateX(-10px);
+  opacity: 1;
+}

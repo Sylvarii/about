@@ -1,0 +1,60 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  background-image: url('images/background.webp');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.custom-alert {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 10px 20px;
+  z-index: 100;
+
+  cursor: pointer;
+}
+
+.alert-content {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /*100vh taking entire viewport height*/
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.base {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 195px);
+  grid-template-rows: repeat(4, 145px);
+  grid-gap: 10px;
+}
+
+.base > div {
+  opacity: 1;
+}

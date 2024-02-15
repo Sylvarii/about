@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="boxes.css">
+    <link rel="stylesheet" href="nicknames.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rock+Salt&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Custom Alert -->
+    <div class="custom-alert" id="js-custom-alert">
+      <div class="alert-content">
+        <p id="alert-message"></p>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="base">
+        <div class="discord-box" onmouseover="showNick('js-dc-nick')" onmouseout="hideNick('js-dc-nick')">
+          <img src="images/discord-logo-white.png">
+          <p class="dc-nick">@izz_ainn</p>
+        </div>
+        <div class="date-box">
+          <div class="datetime-box" id="date"></div>
+          <div class="timetime-box" id="time"></div>
+        </div>
+        <a href="https://wiseoldman.net/players/Islall" target="blank" class="osrs-box">
+          <img src="images/osrs.png">
+          <p class="osrs-nick">@Islall</p>
+        </a>
+        <a href="https://osu.ppy.sh/users/3493804" target="blank" class="osu-box">
+          <img src="images/osu.png">
+        </a>
+        <a href="https://twitter.com/Izz_AinN" target="blank" class="twitter-box">
+          <img src="images/twitter.png">
+          <p class="twitter-nick">@izz_ainn</p>
+        </a>
+        <a href="https://steamcommunity.com/id/KazamiYuuka/" target="blank" class="steam-box">
+          <img src="images/steam.png">
+          <p class="steam-nick">@KazamiYuuka</p>
+        </a>
+        <div class="name-box">
+          <div class="top-right">Izz_AinN</div>
+          <p class="sylvari-name">also known as -Sylvari</p>
+        </div>
+        <a href="https://github.com/Sylvarii" target="blank" class="github-box">
+          <img src="images/github.png">
+          <p class="github-nick">@Sylvarii</p>
+        </a>
+        <a href="https://www.youtube.com/@SylvariMinus" target="blank" class="youtube-box">
+          <img src="images/youtube.png">
+          <p class="youtube-nick">@SylvariMinus</p>
+        </a>
+      </div>
+    </main>
+    <script src="port.js"></script>
+  </body>
+</html>
